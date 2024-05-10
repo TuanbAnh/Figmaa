@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --font-heading: "Sen", sans-serif;
+  --primary-color: #ffb900;
+}
 html {
   font-size: 62.5%;
 }
@@ -20,6 +24,9 @@ a {
   margin: 0 auto;
   max-width: calc(100% - 48px);
 }
+.btn:hover {
+  opacity: 0.7;
+}
 .btn {
   display: inline-block;
   color: #fff;
@@ -28,7 +35,7 @@ a {
   font-size: 1.6rem;
   font-weight: 600;
   background-color: black;
-  border-radius: 100px;
+  border-radius: 999px;
   padding: 0 16px;
   line-height: 50px;
 }
@@ -39,6 +46,7 @@ a {
 .hed.fix {
   position: sticky;
   top: -28px;
+  z-index: 1;
 }
 .hed .body {
   display: flex;
@@ -79,4 +87,135 @@ a {
 }
 .hed .action {
   margin-left: 49px;
+}
+
+/* ============hero=========== */
+.hero {
+  padding: 56px;
+  background-color: rgb(209, 209, 232);
+}
+.hero .body {
+  display: flex;
+}
+.hero .media-block {
+  width: 48%;
+  position: relative;
+}
+.hero .content-block {
+  width: 52%;
+}
+.hero .media-block .ing {
+  width: 470px;
+  height: 685px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.hero .hero-sumary {
+  padding: 24px;
+  position: absolute;
+  background-color: rgb(229, 229, 237);
+  width: 270px;
+  right: 0;
+  border-radius: 12px;
+  bottom: 48px;
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.05);
+}
+.hero-sumary .item {
+  display: flex;
+}
+.hero-sumary .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(222, 243, 222);
+  margin: 0 16px 22px 0;
+}
+
+.hero-sumary .i2 {
+  background-color: rgb(214, 214, 235);
+}
+.hero-sumary .i3 {
+  background-color: rgb(235, 214, 230);
+}
+.hero-sumary .lablel {
+  font-size: 1.4rem;
+  color: rgb(116, 116, 172);
+  line-height: 1.86;
+}
+.hero-sumary .title {
+  font-size: 1.8rem;
+  color: rgb(34, 34, 100);
+  font-weight: 600;
+  line-height: 1.67;
+}
+/* ========hero_right========== */
+.hero .content-block {
+  padding-left: 130px;
+  padding-top: 64px;
+  width: 52%;
+}
+.hero .heading {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 5.8rem;
+  font-weight: 700;
+  line-height: 1.17; /* 117.241% */
+  letter-spacing: -1.16px;
+}
+.hero .desc {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 1.66; /* 166.667% */
+  margin-top: 22px;
+}
+.hero .cta-group {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.hero-cta {
+  min-width: 180px;
+  line-height: 64px;
+  background-color: var(--primary-color);
+}
+.hero .watch-video {
+  border: none;
+  background: transparent;
+  display: flex;
+  padding-left: 28px;
+  align-items: center;
+  cursor: pointer;
+}
+.watch-video img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.watch-video span {
+  padding-left: 14px;
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.66; /* 166.667% */
+}
+.hero .desc-resen {
+  margin-top: 18px;
+}
+.hero .stats {
+  margin-top: 10px;
+}
+.hero .stats strong {
+  color: black;
+  font-family: var(--font-heading);
+  font-size: 4.4rem;
+  line-height: 1.23;
+  margin-right: 15px;
+  font-weight: bold;
+}
+.hero .stats strong:nth-child(2) {
+  margin-left: 28px;
 }
